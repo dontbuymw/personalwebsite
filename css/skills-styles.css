@@ -1,0 +1,302 @@
+body {
+    background-image: url(../images/Camelia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-position: center; */
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 0;
+}
+
+
+h3 {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-size: 3em; */
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    scroll-margin-top: 150px;
+
+    @media (orientation: landscape) {
+        font-size: 3em;
+    }
+
+    @media (orientation: portrait) {
+        font-size: 2em;
+    }
+}
+
+.content-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 40px;
+    padding-right: 40px; */
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+    @media (orientation: landscape) {
+        flex-direction: row;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    @media (orientation: portrait) {
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.top-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    margin: 0;
+    padding: 0;
+
+    border-bottom: 4px solid black;
+    border-radius: 0px 0px 8px 8px;
+    box-sizing: border-box;
+
+    background-image: url(../images/blue-archive-1.png);
+    overflow: hidden;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    /* color: white; */
+}
+
+.top-menu a {
+    color: white;
+    background-color: black;
+    /* font-size: 2em; */
+    padding: 15px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+
+    @media (orientation: landscape) {
+        font-size: 20px;
+    }
+
+    @media (orientation: portrait) {
+        font-size: 13px;
+    }
+
+}
+
+.main-content {
+    /* margin-top: 100px; */
+    margin-bottom: 7%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    /* max-width: fit-content; */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-sizing: border-box;
+
+    @media (orientation: landscape) {
+        margin-top: 100px;
+    }
+
+    @media (orientation: portrait) {
+        margin-top: 180px;
+    }
+}
+
+
+
+
+
+
+.grid-section {
+    display: grid;
+    /* grid-template-columns: auto 40% auto 40% auto;
+    grid-template-rows: 30fr 1fr 30fr 1fr; */
+    /* grid-template: repeat(7, auto) / repeat(5, auto); */
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+
+    @media (orientation: landscape) {
+        grid-template-columns: auto 40% auto 40% auto;
+        grid-template-rows: 30fr 1fr 30fr 1fr;
+    }
+
+    @media (orientation: portrait) {
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows: 20% auto 20% auto 20% auto 20%;
+    }
+}
+
+.grid-h2 {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-size: 4em; */
+    color: black;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    scroll-margin-top: 150px;
+
+    @media (orientation: landscape) {
+        font-size: 40px;
+    }
+
+    @media (orientation: portrait) {
+        font-size: 2em;
+    }
+}
+
+.grid-img {
+    /* width: 350px; */
+    height: auto;
+    border-radius: 10px;
+
+    margin-right: 30px;
+    margin-left: 30px;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    @media (max-width: 480px) {
+        width: 150px;
+    }
+    
+    @media (min-width: 481px) and (max-width: 1024px) {
+        width: 250px;
+    }
+
+    @media (min-width: 1025px) and (max-width:1500px) {
+        width: 250px;
+    }
+
+    @media (min-width: 1500px) {
+        width: 400px;
+    }
+
+}
+
+.grid-text {
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+
+    @media (orientation: landscape) {
+        font-size: 17px;
+        margin-right: 30px;
+        margin-left: 30px;
+        line-height: 20px;
+        width: 80%;
+    }
+    @media (orientation: portrait) {
+        font-size: 10px;
+        margin-right: 0px;
+        margin-left: 0px;
+        line-height: 20px;
+        width: 70%;
+    }
+
+    /* width: 55%; */
+    height: auto;
+
+    color: black;
+
+    text-align: justify;
+
+    /* margin-right: 30px;
+    margin-left: 30px;
+
+    line-height: 40px; */
+}
+
+.grid-card {
+    /* border: 6px solid black; */
+    border-radius: 20px;
+    box-sizing: border-box;
+    /* background-color: #da5358; */
+    
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item-1 {
+    @media (orientation: landscape){
+        grid-row: 1; 
+        grid-column: 2;
+    }
+    @media (orientation: portrait) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    
+}
+
+.grid-item-2 {
+    @media (orientation: landscape){
+        grid-row: 1; 
+        grid-column: 4;
+    }
+    @media (orientation: portrait) {
+        grid-row: 3;
+        grid-column: 2;
+    }
+}   
+
+.grid-item-3 {
+    @media (orientation: landscape){
+        grid-row: 3; 
+        grid-column: 2;
+    }
+    @media (orientation: portrait) {
+        grid-row: 5;
+        grid-column: 2;
+    }
+    
+}
+
+.grid-item-4 {
+    @media (orientation: landscape){
+        grid-row: 3; 
+        grid-column: 4;
+    }
+    @media (orientation: portrait) {
+        grid-row: 7;
+        grid-column: 2;
+    }
+    
+}
+

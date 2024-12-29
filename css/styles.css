@@ -1,0 +1,243 @@
+/* @media (max-width: 480px) {
+
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    
+}
+
+@media (min-width: 1025px) {
+
+} */
+
+
+
+body {
+    background-image: url(../images/Camelia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-position: center; */
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.main-screen {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-site {
+    margin-top: 5%;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 480px) {
+        width: 30%;
+        justify-content: center;
+    }
+    
+    @media (min-width: 481px) and (max-width: 1024px) {
+        width: 80%;
+        justify-content: center;
+    }
+
+    @media (min-width: 1025px) and (max-width:1500px) {
+        justify-content: center;
+        width: 60%;
+        right: 20%;
+    }
+
+    @media (min-width: 1500px) {
+        position: relative;
+        height: auto;
+        width: 30%;
+        right: 20%;
+    }
+
+    
+}
+
+.about-author {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    height: auto;
+    
+
+    /* @media (max-width: 480px) {
+        
+    }
+
+    @media (min-width: 481px) and (max-width: 1024px) {
+    }
+
+    @media (min-width: 1025px) {
+
+    } */
+}
+
+.about-author-text {
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-size: 20px; */
+    text-align: justify;
+
+    color: white;
+
+    margin: 30px;
+
+    @media (orientation: landscape) {
+        font-size: 20px;
+    }
+
+    @media (orientation: portrait) {
+        font-size: 15px;
+    }
+}
+
+.about-author-button {
+    background-color: white;
+    height: 60px;
+    width: 300px;
+
+    text-decoration: none;
+    text-align: center;
+
+    border-radius: 10px;
+    border: none;
+
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-size: 18px; */
+    color: black;
+
+    margin: 30px;
+    margin-top: 0px;
+
+    /* @media (max-width: 480px) {
+        height: 60px;
+        width: 200px;
+        font-size: 15px;
+    }
+
+    @media (min-width: 481px) and (max-width: 1024px) {
+        
+    }
+
+    @media (min-width: 1025px) {
+        height: 60px;
+        width: 300px;
+        font-size: 18px;
+    } */
+
+    /* @media (max-width: 480px) {
+        
+    }
+
+    @media (min-width: 481px) and (max-width: 1024px) {
+        width: 80%;
+        justify-content: center;
+    }
+
+    @media (min-width: 1025px) {
+
+    } */
+}
+
+.social {
+    margin-top: 10px;
+    
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.social-img {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+}
+
+.top-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    margin: 0;
+    padding: 0;
+
+    border-bottom: 4px solid black;
+    border-radius: 0px 0px 8px 8px;
+    box-sizing: border-box;
+
+    background-image: url(../images/blue-archive-1.png);
+    overflow: hidden;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    /* color: white; */
+}
+
+.top-menu a {
+    color: white;
+    background-color: black;
+    /* font-size: 2em; */
+    padding: 15px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+
+    @media (orientation: landscape) {
+        font-size: 20px;
+    }
+
+    @media (orientation: portrait) {
+        font-size: 13px;
+    }
+
+}
+
+.main-content {
+    margin-top: 9%;
+    padding-top: 30%;
+    padding-bottom: 30px;
+
+    /* max-width: fit-content; */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+

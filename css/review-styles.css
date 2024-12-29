@@ -1,0 +1,167 @@
+body {
+    background-image: url(../images/Camelia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-position: center; */
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-size: 4em; */
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    scroll-margin-top: 150px;
+
+    @media (orientation: landscape) {
+        font-size: 5em;
+    }
+
+    @media (orientation: portrait) {
+        font-size: 3em;
+    }
+}
+
+.top-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    margin: 0;
+    padding: 0;
+
+    border-bottom: 4px solid black;
+    border-radius: 0px 0px 8px 8px;
+    box-sizing: border-box;
+
+    background-image: url(../images/blue-archive-1.png);
+    overflow: hidden;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    /* color: white; */
+}
+
+.top-menu a {
+    color: white;
+    background-color: black;
+    /* font-size: 2em; */
+    padding: 15px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+
+    @media (orientation: landscape) {
+        font-size: 20px;
+    }
+
+    @media (orientation: portrait) {
+        font-size: 13px;
+    }
+
+}
+
+.main-content {
+    margin-top: 150px;
+    margin-bottom: 7%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    /* max-width: fit-content; */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-input-field {
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-size: 25px;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+.message-input-field {
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-size: 25px;
+
+    width: 80%;
+    height: auto;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 3px solid black;
+    box-sizing: border-box;
+
+    resize: none;
+    overflow: hidden;
+
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.message-input-field:focus {
+    outline: none;
+}
+
+.submit-button {
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 3px solid black;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+
+.submit-button:hover {
+    background-color: #fe4e4e;
+}
+
+.submit-button:active {
+    transform: scale(0.95); /* Уменьшение кнопки */
+}
+
