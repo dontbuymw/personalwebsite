@@ -109,7 +109,7 @@ body {
 .about-author-button {
     background-color: white;
     height: 60px;
-    width: 300px;
+    width: 80%;
 
     text-decoration: none;
     text-align: center;
@@ -122,6 +122,7 @@ body {
     font-style: normal;
     /* font-size: 18px; */
     color: black;
+    font-size: 1em;
 
     margin: 30px;
     margin-top: 0px;
