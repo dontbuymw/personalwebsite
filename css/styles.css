@@ -43,7 +43,7 @@ body {
     flex-direction: column;
 
     @media (max-width: 480px) {
-        width: 30%;
+        width: 80%;
         justify-content: center;
     }
     
