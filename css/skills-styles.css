@@ -10,6 +10,27 @@ body {
 }
 
 
+h2 {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-size: 4em; */
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    scroll-margin-top: 150px;
+
+    @media (orientation: landscape) {
+        font-size: 4em;
+    }
+
+    @media (orientation: portrait) {
+        font-size: 2em;
+    }
+}
+
 h3 {
     font-family: "Tiny5", sans-serif;
     font-weight: 400;
@@ -20,14 +41,17 @@ h3 {
     margin-top: 30px;
     margin-bottom: 10px;
 
+    padding-left: 20px;
+    padding-right: 20px;
+
     scroll-margin-top: 150px;
 
     @media (orientation: landscape) {
-        font-size: 3em;
+        font-size: 2em;
     }
 
     @media (orientation: portrait) {
-        font-size: 2em;
+        font-size: 1em;
     }
 }
 
@@ -95,11 +119,11 @@ h3 {
     text-decoration: none;
 
     @media (orientation: landscape) {
-        font-size: 20px;
+        font-size: 80%;
     }
 
     @media (orientation: portrait) {
-        font-size: 13px;
+        font-size: 60%;
     }
 
 }
@@ -188,11 +212,11 @@ h3 {
     margin-bottom: 15px;
 
     @media (max-width: 480px) {
-        width: 150px;
+        width: 30%;
     }
     
     @media (min-width: 481px) and (max-width: 1024px) {
-        width: 250px;
+        width: 80%;
     }
 
     @media (min-width: 1025px) and (max-width:1500px) {
