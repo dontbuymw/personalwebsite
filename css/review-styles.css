@@ -21,11 +21,11 @@ h2 {
     scroll-margin-top: 150px;
 
     @media (orientation: landscape) {
-        font-size: 5em;
+        font-size: 350%;
     }
 
     @media (orientation: portrait) {
-        font-size: 3em;
+        font-size: 250%;
     }
 }
 
@@ -69,11 +69,11 @@ h2 {
     text-decoration: none;
 
     @media (orientation: landscape) {
-        font-size: 20px;
+        font-size: 80%;
     }
 
     @media (orientation: portrait) {
-        font-size: 13px;
+        font-size: 60%;
     }
 
 }
@@ -113,6 +113,14 @@ h2 {
     border-radius: 5px;
     border: 3px solid black;
     box-sizing: border-box;
+
+    @media (orientation: landscape) {
+        font-size: 100%;
+    }
+
+    @media (orientation: portrait) {
+        font-size: 80%;
+    }
 }
 
 .message-input-field {
@@ -135,6 +143,14 @@ h2 {
 
     word-wrap: break-word;
     white-space: pre-wrap;
+
+    @media (orientation: landscape) {
+        font-size: 100%;
+    }
+
+    @media (orientation: portrait) {
+        font-size: 80%;
+    }
 }
 
 .message-input-field:focus {
@@ -155,6 +171,16 @@ h2 {
     transition: all 0.3s ease;
     background-color: rgb(240, 240, 240);
     color: black;
+
+    width: 80%;
+
+    @media (orientation: landscape) {
+        font-size: 100%;
+    }
+
+    @media (orientation: portrait) {
+        font-size: 80%;
+    }
 }
 
 .submit-button:hover {
